@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio about Skarli Pena" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=Source+Code+Pro:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/7038e8104e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/normalize.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/toggle-switch.css" />
+    <title>👩🏻 Skarli Pena-Larsen Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" title="Homepage" href="/"
+          >Skarli Pena-Larsen <i class="fa-regular fa-music"></i
+        ></a>
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                title="Homepage"
+                href="index.html"
+                ><i class="fa-duotone fa-house-heart"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Project page" href="projects.html"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Resume page" href="resume.html"
+                >Resume</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Contact page" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Toggle -->
+    <div class="mt-5 controls">
+      <label class="toggle-switch">
+        Dark Mode
+        <input type="checkbox" id="dark-mode-toggle" />
+        <div class="toggle-switch-border">
+          <div class="toggle-switch-dot"></div>
+        </div>
+      </label>
+    </div>
+    <!-- Contact -->
+    <div class="content-container container">
+      <div class="content">
+        <h1 class="display-1 mb-5 text-center">Let's get in touch!</h1>
+        <div class="row">
+          <div class="col-md-8">
+            <form
+              id="my-form"
+              action="https://formspree.io/f/mvoyrqro"
+              method="POST"
+              class="border p-3 rounded mb-3"
+            >
+              <div class="mb-3">
+                <label class="form-label"> Your email: </label>
+                <input
+                  type="email"
+                  name="_replyto"
+                  class="form-control"
+                  required=""
+                  autofocus=""
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label"> Your message: </label>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  required=""
+                ></textarea>
+              </div>
+
+              <!-- your other form fields go here -->
+
+              <button
+                type="submit"
+                class="btn btn-branding"
+                id="my-form-button"
+              >
+                Send
+              </button>
+              <p id="my-form-status"></p>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <h3><i class="fa-regular fa-envelope"></i> Email</h3>
+            <p>
+              <a href="mailto:skarlicodes@gmail.com"> skarlicodes@gmail.com </a>
+            </p>
+            <h3><i class="fa-brands fa-instagram"></i> Instagram</h3>
+            <p>
+              <a href="https://www.instagram.com/skarliniloiv" target="_blank">
+                @Skarliniloiv
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/skarlipena/" target="_blank">
+            LinkedIn
+            <span class="link-icon">
+              <i class="fa-brands fa-linkedin fa-fade"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="assets/skarliCV.pdf">
+            CV
+            <span class="link-icon">
+              <i class="fa-solid fa-user-vneck-hair-long fa-beat"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/skarliven">
+            GitHub
+            <span class="link-icon">
+              <i class="fa-brands fa-github fa-spin"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <p class="copywright">
+        © 2022 <i class="fa-solid fa-laptop-code"></i> by Skarli Pena-Larsen,
+        and is
+        <a href="https://github.com/skarliven/Skarli-Portfolio" target="_blank"
+          >Open-sourced on GitHub</a
+        >
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var form = document.getElementById("my-form");
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML =
+                "Thanks for your submission! I'll get back to you as soon as I can";
+              form.reset();
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, "errors")) {
+                  status.innerHTML = data["errors"]
+                    .map((error) => error["message"])
+                    .join(", ");
+                } else {
+                  status.innerHTML =
+                    "Oops! There was a problem submitting your form";
+                }
+              });
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = "Oops! There was a problem submitting your form";
+          });
+      }
+      form.addEventListener("submit", handleSubmit);
+    </script>
+  </body>
+</html>
